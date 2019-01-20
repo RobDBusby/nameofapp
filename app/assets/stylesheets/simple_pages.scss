@@ -2,14 +2,35 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
-  background-image: url(image-path("yeezy.jpg"));
+  background-image: url(image-path("drip.jpg"));
   background-size: cover;
   position: relative;
 }
-h1 {
-  color: red;
-}
-h1 {
-  text-align: center;
+h2 {
   font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 75px;
+}
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+//**** Nav section ****//
+#myNavbar {
+  height: 50px;
+  background-color: #c9c9d4;
+}
+#myNavbar a {
+  padding: 5px 10px;
+  color: black;
+}
+#myNavbar a:hover {
+  color: #050089;
+}
+
+//**** Footer section ****//
+footer {
+  color: white;
 }
