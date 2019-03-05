@@ -1,19 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
-
-<p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
-</p>
+<div class="container-fluid">
+  <div class="row">
+    <% @products.each do |product| %>
+    <%= image_tag(product.image_url, class: "img-fluid") %>
+      <div class="col-sm">
+        <a href="#"><h1><%= @product.name %></h1></a>
+        <p><%= @product.description %></p>
+        <strong>$850</strong>
+      </div><!-- end of col -->
+    <% end %>
+  </div><!-- end of row -->
+</div><!-- end of container -->
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
